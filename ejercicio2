@@ -1,0 +1,35 @@
+package com.mycompany.ejercicio1;
+
+import java.util.Scanner;
+
+/**gr
+ *
+ * @author asus
+ */
+public class ejercicio2 {
+    
+    /**
+     *
+     * @param arg
+     */
+    public static void main(String[]arg){
+        var Sc = new Scanner(System.in);
+        System.out.println("ingrese numero entero");
+        var numero = Sc.nextInt();
+        
+        var digitos= numeroDigitos(numero);
+        System.out.println("el numero tiene"+digitos+"cifras");
+    }
+    public static int numeroDigitos(int numero){
+        var cifras=0;
+        
+        while(numero !=0){
+            numero/=10;
+            cifras++;
+        }
+        
+         return cifras;       
+    }   
+
+}  
+    
